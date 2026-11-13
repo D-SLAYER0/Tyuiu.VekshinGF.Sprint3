@@ -1,5 +1,6 @@
-﻿using Tyuiu.VekshinGF.Sprint3.Task1.V21;
+﻿using System;
 using Tyuiu.VekshinGF.Sprint3.Task1.V21.Lib;
+
 namespace Tyuiu.VekshinGF.Sprint3.Task1.V21
 {
     internal class Program
@@ -13,18 +14,18 @@ namespace Tyuiu.VekshinGF.Sprint3.Task1.V21
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Циклические алгоритмы (while)                                     *");
-            Console.WriteLine("* Задание #0                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
             Console.WriteLine("* Вариант #21                                                             *");
             Console.WriteLine("* Выполнил: Векшин Г. Ф. | ПИНб-26-1                                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, используя цикл while, которая вычисляет             *");
-            Console.WriteLine("* произведение ряда: p = ∏((0,5 + k/x)/(cos x + 0,5))^3, k=1..12, x=1.    *");
+            Console.WriteLine("* произведение ряда: p = ∏(((0,5 + k/5) / (cos x + 0,5))^3), k=1..12, x=1.*");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 1;   // value
+            int x = 1;
             int startValue = 1;
             int stopValue = 12;
 

@@ -8,17 +8,18 @@ namespace Tyuiu.VekshinGF.Sprint3.Task1.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            
-           DataService ds = new DataService();
-           int x = 1, start = 1, stop = 12;
 
-            double expected = 1.7339e27;
-            double delta = 1e24;   // допустимая погрешность для большого double
+            DataService ds = new DataService();
+            int x = 1;
+            int startValue = 1;
+            int stopValue = 12;
+            double expected = 16947810.88;
 
-            double result = ds.GetMultiplySeries(x, start, stop);
+            double result = ds.GetMultiplySeries(x, startValue, stopValue);
 
-            Assert.AreEqual(expected, result, delta);
-            
+            // Assert (допустимая погрешность 0.01 для округленных значений)
+            Assert.AreEqual(expected, result, 0.01);
+
         }
     }
 }

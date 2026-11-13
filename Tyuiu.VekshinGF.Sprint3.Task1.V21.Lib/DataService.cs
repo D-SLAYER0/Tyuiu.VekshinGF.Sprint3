@@ -5,18 +5,18 @@ namespace Tyuiu.VekshinGF.Sprint3.Task1.V21.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double p = 1;
-            int k = startValue;                 // инициализация счётчика
+            double k = startValue;
+            double res = 1;
 
-            while (k <= stopValue)             
+            while (k < stopValue + 1)
             {
-                double numerator = 0.5 + (double)k / value;
-                double denominator = Math.Cos(value) + 0.5;
-                double term = Math.Pow(numerator / denominator, 3);
-                p *= term;
-                k++;                            
+                // Формула: ((0.5 + k/5) / (cos(x) + 0.5))^3
+                res *= Math.Pow(((0.5 + (k / 5.0)) / (Math.Cos(value) + 0.5)), 3);
+                k++;
             }
-            return p;
+
+
+            return Math.Round(res, 2);
         }
     }
 }
