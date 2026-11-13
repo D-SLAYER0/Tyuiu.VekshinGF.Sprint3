@@ -1,4 +1,4 @@
-﻿using Tyuiu.VekshinGF.Sprint3.Task20.V24.Lib;
+﻿using Tyuiu.VekshinGF.Sprint3.Task2.V24.Lib;
 
 namespace Tyuiu.VekshinGF.Sprint3.Task1.V24
 {

@@ -1,11 +1,12 @@
-﻿using Tyuiu.VekshinGF.Sprint3.Task20.V24.Lib;
-namespace Tyuiu.VekshinGF.Sprint3.Task20.V24.Test4
+﻿using Tyuiu.VekshinGF.Sprint3.Task2.V24.Lib;
+
+namespace Tyuiu.VekshinGF.Sprint3.Task1.V24.Test
 {
     [TestClass]
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GetMultiplySeries_a025_k1_to_8_Returns55217_45()
         {
             DataService ds = new DataService();
             double a = 0.25;
