@@ -42,6 +42,7 @@ namespace Tyuiu.VekshinGF.Sprint3.Task3.V18.Test
             string result = ds.ReplaceNumOnChar(input, item);
 
             Assert.AreEqual(expected, result);
+
         }
     }
 }
