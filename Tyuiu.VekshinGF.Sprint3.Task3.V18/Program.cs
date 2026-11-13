@@ -38,7 +38,6 @@ namespace Tyuiu.VekshinGF.Sprint3.Task3.V18
             Console.WriteLine("Результат: " + result);
 
             Console.ReadLine();
-
         }
     }
 }
