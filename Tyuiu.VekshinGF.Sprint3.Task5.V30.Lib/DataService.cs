@@ -11,11 +11,10 @@ namespace Tyuiu.VekshinGF.Sprint3.Task5.V30.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    y += (Math.Pow(x, 3) - k);
+                    // + x находится внутри суммы
+                    y += (Math.Pow(x, 3) - k + x);
                 }
             }
-
-            y += x;
 
             return Math.Round(y, 3);
         }
