@@ -16,6 +16,7 @@ namespace Tyuiu.VekshinGF.Sprint3.Task2.V24.Lib
             while (k <= stopValue);
 
             return Math.Round(p, 3);
+
         }
     }
 }
